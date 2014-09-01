@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplicationCallingClassLib
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n1, n2, n3;
+            Console.WriteLine("Please enter the n1 value: \n");
+            n1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter the n2 value: \n");
+            n2 = int.Parse(Console.ReadLine());
+
+            n3 = ClassLibrary1.Class1.Addition(n1, n2);
+
+            Console.WriteLine("The value of n3 is: \n" + n3);
+            Console.ReadLine(); 
+
+        }
+
+       
+    }
+}
