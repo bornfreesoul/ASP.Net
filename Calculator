@@ -1,1 +1,38 @@
-hi
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CalculatorConsoleCsharpApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n1, n2, n3, n4, n5, n6;
+            Console.WriteLine("Please enter the value of n1: \n");
+            n1 = int.Parse(Console.ReadLine());
+           
+            Console.WriteLine("\n");
+           
+            Console.WriteLine("Please enter the value of n2: \n");
+            n2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n");
+
+            n3 = n1 + n2;
+            n4 = n1 - n2;
+            n5 = n1 * n2;
+            n6 = n1 / n2;
+
+            Console.WriteLine("The calculator output is like this: \n");
+
+            Console.WriteLine("The calculator addition output is: " + n3 + "\n");
+            Console.WriteLine("The calculator subtraction is like this: " + n4 + "\n");
+            Console.WriteLine("The calculator multiply is like this: " + n5 + "\n");
+            Console.WriteLine("The calculator divide is like this: " + n6 + "\n");
+
+            Console.ReadLine();
+        }
+    }
+}
