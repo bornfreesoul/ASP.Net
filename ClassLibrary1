@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassLibrary1
+{
+    public class Class1
+    {
+        public static double Addition(double n1, double n2)
+        {
+            double n3;
+            n3 = n1 + n2;
+            return n3;
+        }
+    }
+}
