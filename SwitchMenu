@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SwitchMenuConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*** Welcome to the switch menu case. ***");
+           
+            Console.WriteLine("\n1.) First Menu.");
+            Console.WriteLine("2.) Second Menu.");
+            Console.WriteLine("3.) Third Menu.");
+            Console.WriteLine("4.) Fourth Menu.");
+            Console.WriteLine("5.) Fith Menu.\n");
+            Console.WriteLine("Please enter any one number option from the above menu.");
+
+            int option = int.Parse(Console.ReadLine());
+
+            switch(option)
+            {
+                case 1:
+                    {
+                        Console.WriteLine("\nThis is option-1. \n");
+                        break;
+                    }
+                case 2: 
+                      {
+                          Console.WriteLine("\nThis is option-2. \n");
+                        break;
+                    }
+                case 3: 
+                      {
+                          Console.WriteLine("\nThis is option-3. \n");
+                        break;
+                      }
+                case 4: 
+                      {
+                          Console.WriteLine("\nThis is option-4. \n");
+                        break;
+                      }
+                case 5:
+                      {
+                          Console.WriteLine("\nThis is option-5. \n");
+                          break;
+                      }
+                default:
+                      {
+                          Console.WriteLine("\nWrong input!");
+                          break;
+                      }
+                    }
+            Console.ReadLine();
+            }
+    }
+}
