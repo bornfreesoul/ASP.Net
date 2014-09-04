@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UserInputConsoleMessageApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(" *** Welcome to the user input message service. *** \n");
+
+            Console.WriteLine("Please enter the text: " + "\n");
+
+            string str = Console.ReadLine();
+
+            Console.WriteLine("\nThe enterted text is: " + str + ".");
+            Console.ReadLine();
+        }
+    }
+}
