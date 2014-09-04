@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TimeCalculationConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Seconds = 60 * 60 * 24 * 365;
+
+            Console.WriteLine("Total number of {0} seconds in a year.", Seconds);
+            Console.ReadLine();
+        }
+    }
+}
