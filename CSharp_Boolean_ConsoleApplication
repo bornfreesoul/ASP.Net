@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharp_Boolean_ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool myB1 = 5 + 5 == 10;
+            Boolean myB2 = 5 - 3 == 7;
+            Console.WriteLine(myB1);
+            Console.WriteLine(myB2.ToString());
+            Console.WriteLine(myB2 && myB1);
+            Console.WriteLine(myB1 || myB2);
+            Console.WriteLine(myB1 != myB2);
+        }
+    }
+}
