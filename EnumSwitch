@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Enum_Switch_ConsoleApplication
+{
+    class Program
+    {
+        enum Color
+        {
+            Green, Yellow, White, Orange, Red, Black, Blue
+        }
+        
+        static void Main(string[] args)
+        {
+            Color favorite = Color.Blue;
+
+            switch (favorite)
+            {
+                case Color.Blue:
+                    Console.WriteLine("Blue Color");
+                    break;
+                case Color.Black:
+                    Console.WriteLine("Black Color");
+                    break;
+                case Color.Green:
+                    Console.WriteLine("Green Color");
+                    break;
+                case Color.Orange:
+                    Console.WriteLine("Orange Color");
+                    break;
+                case Color.Red:
+                    Console.WriteLine("Red Color");
+                    break;
+                case Color.White:
+                    Console.WriteLine("White Color");
+                    break;
+                case Color.Yellow:
+                    Console.WriteLine("Yellow Color");
+                    break;
+                default:
+                    Console.WriteLine("No Color");
+                    break;
+            }
+        }
+
+    }
+}
