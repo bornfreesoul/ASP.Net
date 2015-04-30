@@ -12,5 +12,6 @@ ASP.Net site codes plus ASP cmd line applications are part of this repo.
 7.) Boolean Console Application in C# language. 
 8.) Enum-Switch Console Application in C# language.
 9. Project Management - PV(Planned Value) application.
+10. Project Management - EV(Earned Value) application. 
 
 ReleaseNotes
