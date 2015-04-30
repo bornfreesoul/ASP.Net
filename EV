@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EarnedValue
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int V1, V2, V3;
+            Console.WriteLine("*** Welcome to PM - Earned Value Calculator. *** \n");
+            Console.WriteLine("It consists of two things.");
+            Console.WriteLine("1. Planned Percentage To Complete; 2. Budget At Completion \n");
+
+            Console.WriteLine("Please enter percentage of completed work value: ");
+            V1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter budget at completion value: ");
+            V2 = int.Parse(Console.ReadLine());
+
+            V3 = V1 * V2;
+
+            Console.WriteLine(" ");
+            Console.WriteLine("The earned value is: " + V3);
+            Console.ReadLine();
+        }
+    }
+}
