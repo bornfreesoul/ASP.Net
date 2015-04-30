@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PM___Planned_Value
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int V1, V2, V3;
+            Console.WriteLine("*** Welcome to PM - Planned Value Calculator. *** \n");
+            Console.WriteLine("It consists of two things.");
+            Console.WriteLine("1. Planned Percentage To Complete; 2. Budget At Completion \n");
+
+            Console.WriteLine("Please enter planned percentage to complete value: ");
+            V1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter budget at completion value: ");
+            V2 = int.Parse(Console.ReadLine());
+
+            V3 = V1 * V2;
+
+            Console.WriteLine(" ");
+            Console.WriteLine("The planned value is: " + V3);
+            Console.ReadLine();
+        }
+    }
+}
+
