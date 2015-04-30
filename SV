@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ScheduleVariance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int V1, V2, V3;
+            Console.WriteLine("*** Welcome to PM - Schedule Variance Calculator. *** \n");
+            Console.WriteLine("It consists of two things.");
+            Console.WriteLine("1. Earned Value; 2. Planned Value. \n");
+
+            Console.WriteLine("Please enter earned value value: ");
+            V1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter planned value: ");
+            V2 = int.Parse(Console.ReadLine());
+
+            V3 = V1 - V2;
+
+            Console.WriteLine(" ");
+            Console.WriteLine("The Schedule variance is: " + V3);
+            Console.ReadLine();
+        }
+    }
+}
+
