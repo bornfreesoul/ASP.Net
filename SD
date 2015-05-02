@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StandardDeviation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*** Welcome to the Standard Deviation calculator. ***\n");
+            Console.WriteLine("This formula consists of two things.");
+            Console.WriteLine("1. Optimistic Duration; 2. Pessimistic Duration. \n");
+
+            float SD;
+            float PD = 0; 
+            float OD = 0;
+
+            Console.WriteLine("Please enter the pessimistic duration: ");
+            PD = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter the optimistic duration: ");
+            OD = float.Parse(Console.ReadLine());
+
+            SD = (PD - OD) / 6;
+
+            Console.WriteLine("The standard deviation is: " + SD);
+            Console.ReadLine();
+        }
+    }
+}
