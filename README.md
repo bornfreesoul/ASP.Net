@@ -15,5 +15,6 @@ ASP.Net site codes plus ASP cmd line applications are part of this repo.
 10. Project Management - EV(Earned Value) application. 
 11. Project Management - SV(Schedule Variance) application.
 12. Body Mass Index application.
-
+13. Project Managment - SD(Standard Deviation) application.
+14. 
 ReleaseNotes
