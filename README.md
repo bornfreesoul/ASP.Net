@@ -16,5 +16,5 @@ ASP.Net site codes plus ASP cmd line applications are part of this repo.
 11. Project Management - SV(Schedule Variance) application.
 12. Body Mass Index application.
 13. Project Managment - SD(Standard Deviation) application.
-14. 
+14. Project Managment - VC(Variance At Completion) application.
 ReleaseNotes
