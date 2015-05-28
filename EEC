@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EstimatingEffortCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*** Estimating Effort Calculator ***\n");
+            Console.WriteLine("E = (B+4M+W)/6; B = Best Case; M = Most Likely Case; B = Worst Case \n");
+                        
+            Console.WriteLine("Please enter the best case, man-hours no: ");
+            float B = float.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Please enter the most likely case, man-hours no: ");
+            float M = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please enter the worst case, man-hours no: ");
+            float W = float.Parse(Console.ReadLine());
+
+            float E = (B + 4 * M + W) / 6;
+
+            Console.WriteLine("The estimated effort man hours are: " + E);        
+
+            float SD = (W - B) / 6;
+            Console.WriteLine("The standard deviation result man hours are: " + SD);
+
+            float SP = E / 8;
+            Console.WriteLine("The number of days a single person takes to complete the work is: " + SP);
+            
+            Console.ReadLine();
+        }
+    }
+}
