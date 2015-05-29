@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HourlyWageCalculatorApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\n*** Welcome to the hourly wage calculator ***\n");
+
+            Console.WriteLine("Please enter the number of hrs of working: ");
+            float H = float.Parse(Console.ReadLine());
+            
+            Console.WriteLine();
+
+            Console.WriteLine("Please enter the hourly wage: ");
+            float W = float.Parse(Console.ReadLine());
+
+            float R = (H * W);
+            Console.WriteLine();
+
+            Console.WriteLine();
+            Console.WriteLine("The total amount of the wage w.r.t hours is: " + R);
+            
+            Console.WriteLine();
+
+            Console.WriteLine("Please enter the govt. tax on the final amount of wage: ");
+            float T = float.Parse(Console.ReadLine());
+
+            float NW = (R  * T/100 );
+
+            float A = R - NW;
+            
+            Console.WriteLine();
+
+            Console.WriteLine("The final amount after tax dedcuation is: "+ A);
+
+            Console.ReadLine();
+
+        }
+    }
+}
