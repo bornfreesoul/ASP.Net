@@ -1,0 +1,46 @@
+//author__ = 'www.kingsman.co.in'
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BusFareAppCsharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*** Welcome to the Bus fare Application ***\n");
+            Console.WriteLine("Legends-Information!\n");
+            Console.WriteLine("@)Distance parameter: Kilometer(KM)\n");
+            Console.WriteLine("@)Time: Hours\n");
+
+            Console.WriteLine("1) Please enter the distance travelled by passenger in approx KM: ");
+            float dt = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("2) Please enter the per hour speed in km: ");
+            float ts = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("3) Please enter the per km fare price: ");
+            float fp = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("4) Please enter the road tax per km: ");
+            float tr = float.Parse(Console.ReadLine());            
+
+            float tt = (dt / ts); // Travel Time            
+            float tr1 = (dt * tr); // Tax per km
+            float tf1 = (dt * fp); // Fare without tax
+            float tf = (dt * fp + tr1); // Total Fare with tax
+
+            Console.WriteLine("4) Total tax per km on the travelled distance is: " + tr1);
+            Console.WriteLine("5) Actual fare cost without tax: " + tf1);
+            Console.WriteLine("6) Total approx fare for travelled distance is: " + tf);
+            Console.WriteLine("7) Total time consumed in approx hours for the trip is: " + tt);
+
+            Console.ReadLine();
+      
+        }
+    }
+}
