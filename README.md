@@ -18,6 +18,7 @@ ASP.Net site codes plus ASP cmd line applications are part of this repo.
 13. Project Managment - SD(Standard Deviation) application.
 14. Project Managment - VC(Variance At Completion) application
 15. Estimating Effort Calculator.
-16. Hourly Wage Calculator Application.
+16. Hourly Wage Calculator Application
+17. Bus Fare Application ver.2
 
 ReleaseNotes
